@@ -1,0 +1,6 @@
+# A user's profile is private. Never commit it.
+company-profile.md
+**/company-profile.md
+
+# OS noise
+.DS_Store
