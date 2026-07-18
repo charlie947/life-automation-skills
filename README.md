@@ -24,18 +24,18 @@ Run `company-setup` first. Then the twelve doing-skills, flagship first. Skills 
 | # | Skill | What it owns | Connectors |
 |---|-------|--------------|------------|
 | ★ | **company-setup** (keystone) | Interview once, write the shared `company-profile.md` every skill reads | none |
-| 1 | **inbox-executive-assistant** | Triage Gmail → prioritised brief + reply drafts + today's meetings | Gmail, Calendar |
-| 2 | meeting-scheduler | Find slots, book, reschedule, send holds | Calendar |
+| 1 | **inbox-executive-assistant** | Triage Gmail → prioritised brief + reply drafts + today's meetings | Gmail/Microsoft 365, Calendar |
+| 2 | meeting-scheduler | Find slots, book, reschedule, send holds | Google Calendar/Microsoft 365 |
 | 3 | meeting-notes | Capture + summarise a meeting, route action items | Granola/Fireflies, Notion |
-| 4 | follow-up-chaser | Find threads awaiting a reply, draft the nudge | Gmail, Calendar |
-| 5 | weekly-review | Turn the week's calendar + inbox into a plan | Calendar, Gmail, Notion |
-| 6 | task-capture | Pull tasks out of email/chat, route them to your list | Gmail/Slack, Notion/Airtable |
+| 4 | follow-up-chaser | Find threads awaiting a reply, draft the nudge | Gmail/Microsoft 365, Calendar |
+| 5 | weekly-review | Turn the week's calendar + inbox into a plan | Google Calendar/Microsoft 365, Gmail, Notion |
+| 6 | task-capture | Pull tasks out of email/chat, route them to your list | Gmail/Slack, Notion/Airtable/ClickUp/Asana/Todoist |
 | 7 | research-brief | Multi-source brief on a topic, cited, filed | Web, Drive/Notion |
-| 8 | standup-writer | Draft your status/standup from what you actually did | Slack, Calendar, Notion |
-| 9 | doc-drafter | First-draft a doc or contract from a brief | PandaDoc, Drive |
-| 10 | expense-wrangler | Pull receipts from email, log them | Gmail, Airtable/Sheets |
-| 11 | crm-hygiene | Dedupe, enrich, and tidy contact records | Airtable/Notion |
-| 12 | invoice-chaser | Spot overdue receivables, draft the chase | Xero, Gmail |
+| 8 | standup-writer | Draft your status/standup from what you actually did | Slack/Teams, Google Calendar/Microsoft 365, Notion |
+| 9 | doc-drafter | First-draft a doc or contract from a brief | Google Drive/PandaDoc |
+| 10 | expense-wrangler | Pull receipts from email, log them | Gmail, Airtable/Sheets, Xero |
+| 11 | crm-hygiene | Dedupe, enrich, and tidy contact records | Airtable/Notion/HubSpot |
+| 12 | invoice-chaser | Spot overdue receivables, draft the chase | Xero/Stripe, Gmail |
 
 ## Safety by default
 

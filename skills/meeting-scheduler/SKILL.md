@@ -1,6 +1,6 @@
 ---
 name: meeting-scheduler
-description: Finds times, books, reschedules, and places holds for meetings on Google Calendar. Claude should use this skill whenever the user asks to "schedule a meeting with X", "find a time", "when am I free", "set up a call", "book a slot", "send holds", "put a tentative on those times", "reschedule my 3pm", "move that meeting", or "cancel Friday's review". Proposes and confirms before it creates, moves, or cancels anything. The user (or the other party) always says yes first.
+description: Finds times, books, reschedules, and places holds for meetings on Google Calendar or Microsoft 365 calendar. Claude should use this skill whenever the user asks to "schedule a meeting with X", "find a time", "when am I free", "set up a call", "book a slot", "send holds", "put a tentative on those times", "reschedule my 3pm", "move that meeting", or "cancel Friday's review". Proposes and confirms before it creates, moves, or cancels anything. The user (or the other party) always says yes first.
 license: MIT
 ---
 
@@ -19,7 +19,7 @@ Do **not** use it to message the other party directly (this skill has no send pa
 
 ## What it needs (setup)
 
-The **Google Calendar** native connector, login-only OAuth, no build. It uses:
+A calendar connector, **Google Calendar or Microsoft 365 calendar**, login-only OAuth, no build. On Google Calendar it uses:
 
 - `list_calendars`, `list_events`: read the default timezone and everything already booked, so free time is real not guessed.
 - `suggest_time`: find candidate slots inside working hours.
@@ -27,6 +27,8 @@ The **Google Calendar** native connector, login-only OAuth, no build. It uses:
 - `update_event`: reschedule, add attendees, or promote a hold to a confirmed meeting.
 - `delete_event`: cancel.
 - `respond_to_event`: accept or decline an invite on the user's behalf (with confirmation).
+
+The Microsoft 365 calendar connector exposes the same actions (read calendars and events, find availability, create, update, and cancel events) under its own tool names. Use whichever the user has connected.
 
 **Optional:** Calendly through a Zapier connection. Zapier exposes create-one-off-meeting, find-event, find-user, cancel-scheduled-event, and mark-no-show. Use it only if the user has already wired Calendly through Zapier. It is an add-on, not a requirement, and it has **no reschedule action** (cancel and rebook instead).
 
@@ -93,4 +95,4 @@ After acting:
 ```
 
 ## Keywords
-schedule a meeting, find a time, when am I free, set up a call, book a slot, send holds, hold, tentative, reschedule, move my meeting, cancel meeting, availability, free/busy, calendar, working hours, buffer, timezone, invite, Google Calendar, Calendly
+schedule a meeting, find a time, when am I free, set up a call, book a slot, send holds, hold, tentative, reschedule, move my meeting, cancel meeting, availability, free/busy, calendar, working hours, buffer, timezone, invite, Google Calendar, Microsoft 365, Outlook calendar, Calendly
