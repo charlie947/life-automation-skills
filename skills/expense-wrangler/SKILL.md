@@ -78,5 +78,30 @@ FLAGGED, suspicious, not logged (n)
 Next: reply "log it" to write the 3 clean rows. Parked and flagged rows are left out.
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: A Gmail receipt reads "Notion Labs Inc, $40.00, VAT not shown".
+Weak: | 2026-07-03 | Notion Labs | 40.00 | USD | Software | 8.00 |
+Strong: | 2026-07-03 | Notion Labs | 40.00 | USD | Software | 0.00 |
+Why: the tax figure was not on the receipt. Calculating one is inventing a number an accountant will rely on.
+</example>
+<example>
+Situation: An email says "your subscription renews on 1 August, $99".
+Weak: Logs it as a $99 expense dated 1 August.
+Strong: Leaves it out and flags it: "Renewal notice for $99 on 1 Aug, not a receipt. No charge confirmed yet."
+Why: a notice of a future charge is not a receipt. Logging it double-counts the month it actually lands.
+</example>
+<example>
+Situation: A vendor name that could be personal or business.
+Weak: Silently files "Uber, 14.20" under Travel.
+Strong: Files it under Travel and marks it: "Uber 14.20 GBP, category assumed Travel, no trip detail on the receipt."
+Why: the category is a guess, and a guess that looks like a fact is what fails an audit.
+</example>
+</examples>
+
 ## Keywords
 expenses, log my expenses, pull my receipts, sort my expenses, expense report, find my receipts, receipts, invoices, expense tracker, bookkeeping, Gmail, Airtable, Google Sheets, Xero, accounting, categorise expenses, VAT, tax, reimbursement

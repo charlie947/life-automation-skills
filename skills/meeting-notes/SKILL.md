@@ -81,5 +81,30 @@ After the user confirms:
       - <action> → <owner>, due <date> · <link>
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: The transcript shows a long discussion and no conclusion.
+Weak: Decisions: "Agreed to move forward with the new pricing."
+Strong: Open questions: "Pricing was discussed for 20 minutes. No decision recorded."
+Why: writing a decision the meeting never made is how a team ends up disagreeing about what was agreed.
+</example>
+<example>
+Situation: "Someone should probably look at the onboarding flow."
+Weak: Action: Review onboarding flow (owner: Sam, due: Friday)
+Strong: Action: Review onboarding flow (owner: [NEEDS: owner], due: [NEEDS: due date])
+Why: nobody said Sam and nobody said Friday. An invented owner means the task quietly belongs to no one.
+</example>
+<example>
+Situation: A three-line aside about someone's holiday.
+Weak: Includes it in the summary for completeness.
+Strong: Leaves it out.
+Why: notes are read in thirty seconds. Everything that is not a decision, an action or an open question is cost.
+</example>
+</examples>
+
 ## Keywords
 meeting notes, summarise my meeting, recap the call, what did we decide, action items from that call, write up the meeting, meeting summary, meeting minutes, follow-ups, decisions, owners, due dates, Granola, Fireflies, Notion, transcript

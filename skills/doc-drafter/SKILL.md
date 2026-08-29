@@ -99,5 +99,30 @@ Signed:
   • Create a PandaDoc document from one of your templates (I will not send it).
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: An NDA brief with no counterparty legal name.
+Weak: "Between: Acme Ltd and the Recipient."
+Strong: "Between: [NEEDS: disclosing party legal name] and [NEEDS: recipient legal name]"
+Why: a plausible-looking party name in a signed document is the most expensive kind of invention here.
+</example>
+<example>
+Situation: The user asks for a mutual NDA and does not mention a term length.
+Weak: Silently writes "three (3) years".
+Strong: Writes "[NEEDS: term, commonly 2-5 years]" and says so in the summary.
+Why: a default buried in a contract reads as a decision the user made, and they never made it.
+</example>
+<example>
+Situation: A proposal, not a legal document.
+Weak: Carries the "not legal advice" warning anyway.
+Strong: Ships labelled DRAFT, no legal warning.
+Why: a warning on everything is a warning on nothing, and it stops being read on the documents that need it.
+</example>
+</examples>
+
 ## Keywords
 draft a contract, first draft, draft a doc, draft an SOW, statement of work, draft an NDA, non-disclosure agreement, draft a proposal, draft an MSA, master services agreement, service agreement, engagement letter, offer letter, write me a first draft, contract draft, PandaDoc, template, legal review

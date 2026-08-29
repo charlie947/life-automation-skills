@@ -94,5 +94,30 @@ Hi <first name>,
 <User's name>
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: You asked a supplier for a quote 11 days ago and heard nothing.
+Weak: "Following up on my previous email. Please advise."
+Strong: "Hi Priya, chasing the quote for the Q4 print run I asked about on 18 July. We need to place the order by Friday, so even a rough number would help."
+Why: the weak one restates that an email exists. The strong one names what is owed, when it was asked, and why it matters now.
+</example>
+<example>
+Situation: A thread where they replied, but did not answer the actual question.
+Weak: Marks it answered and drops it.
+Strong: Keeps it as stalled: "Tom replied on the 22nd but did not give the start date, which was the ask."
+Why: a reply is not an answer. Sweeping on reply-received alone silently loses the threads that matter most.
+</example>
+<example>
+Situation: Third chase to the same person, no reply.
+Weak: Escalates the tone and implies the relationship is at risk.
+Strong: "This is the third nudge on the same thread. Worth a call rather than a fourth email, or dropping it. Which?"
+Why: the ladder runs out. Manufacturing pressure is not a rung.
+</example>
+</examples>
+
 ## Keywords
 follow-up, follow up, chase, chaser, nudge, who owes me a reply, what am I waiting on, waiting on others, outstanding, no reply, unanswered, went quiet, stalled thread, ping them, circle back, chase that up, sent mail, Gmail, Outlook, Microsoft 365, calendar, before the meeting

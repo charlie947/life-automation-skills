@@ -106,5 +106,30 @@ Thanks,
 
 Figures and dates in that draft are placeholders shown for shape only. In a real run every one is pulled from Xero or Stripe (or from an aged-receivables report the user has pasted).
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: Northwind Ltd, £4,200 overdue, 9 days past terms. First contact.
+Weak: "Hi, just checking in on the outstanding balance. Let me know when you can pay. We may have to apply late fees."
+Strong: "Hi Sam, hope you're well. Invoice INV-2041 for GBP 4,200.00 fell due on 20 July, so it's 9 days past terms. Could you confirm a payment date? Bank details are on the invoice, happy to resend."
+Why: the weak one invents a late fee that is not in the contract, and gives no figure, no date and no ask.
+</example>
+<example>
+Situation: Xero returns an aging bucket but no invoice number.
+Weak: "Invoice INV-3097 (£880) is 45 days overdue."
+Strong: "GBP 880.00 of your balance is 31-60 days past terms."
+Why: the invoice number was never in the source. Inventing one to sound precise is the single worst failure here.
+</example>
+<example>
+Situation: A top-five client by revenue is 62 days overdue.
+Weak: Drafts the final notice and reports it as ready to send.
+Strong: "Meridian is your #3 client by revenue and sits at 62 days, which is the final-notice rung. I have not drafted it. Here is what it would say, tell me to go ahead or soften it."
+Why: one mistimed chase can cost the account, so a key client gets a confirmation before the draft exists.
+</example>
+</examples>
+
 ## Keywords
 invoice, overdue invoice, unpaid invoice, chase invoice, receivables, accounts receivable, AR, AR follow-up, who owes me money, outstanding invoices, credit control, dunning, payment reminder, Xero, Stripe, chase email, aged debt

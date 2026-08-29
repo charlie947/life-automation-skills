@@ -87,5 +87,30 @@ Read <n> records. Found <d> duplicate groups, <b> records with blanks, <f> forma
 Nothing has been written yet. Reply with which changes to apply.
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: Two records, same email, one fuller and active last week.
+Weak: Merges them silently and reports "1 duplicate cleaned".
+Strong: Proposes the merge with a survivor named, what carries over, and waits: "confidence HIGH, survivor: Name A (fuller, active last week), keeps phone from B."
+Why: a merge destroys a record. Proposing it costs one line and makes it reversible.
+</example>
+<example>
+Situation: Two records, similar names, different companies.
+Weak: Merges on the name match.
+Strong: Flags it as LOW confidence and leaves it: "S. Patel at Northwind and Sam Patel at Meridian. Different companies, not merged."
+Why: a name is not an identity, and a wrong merge silently fuses two people's history.
+</example>
+<example>
+Situation: A blank company field on a record with a work email domain.
+Weak: Fills it from the domain and reports it as enriched data.
+Strong: Fills it and marks the basis: "Company inferred from email domain, not confirmed."
+Why: an inference recorded as a fact spreads to every report built on the table.
+</example>
+</examples>
+
 ## Keywords
 crm, crm hygiene, clean my crm, tidy my crm, dedupe, deduplicate, duplicate contacts, merge duplicates, merge contacts, fix my contact list, contact cleanup, enrich contacts, tidy contacts, normalise contacts, Airtable, Notion, HubSpot, contacts, records, data cleanup

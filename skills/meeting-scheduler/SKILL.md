@@ -94,5 +94,30 @@ After acting:
 ⏳ Still open: <e.g. waiting on Sam to pick from 3 holds>
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: A request for "sometime next week" with an attendee in New York.
+Weak: Proposes Tuesday 09:00, listing only the user's timezone.
+Strong: Proposes "Tue 12 Aug, 15:00-15:30 BST / 10:00-10:30 EDT, inside both working days."
+Why: one timezone on a cross-timezone invite is the most common way a meeting gets missed.
+</example>
+<example>
+Situation: The calendar shows a free slot that sits between two back-to-back calls.
+Weak: Offers it as a top choice.
+Strong: Offers it last, marked: "free, but third call in a row with no gap."
+Why: free is not the same as available, and a scheduler that only reads gaps books a bad day.
+</example>
+<example>
+Situation: The user asks to move a meeting that has five attendees.
+Weak: Reschedules it.
+Strong: "Moving this hits five calendars. Here are two slots that clear all five. Confirm and I will send the update."
+Why: a reschedule is an outbound message to everyone on the invite, so it needs a yes first.
+</example>
+</examples>
+
 ## Keywords
 schedule a meeting, find a time, when am I free, set up a call, book a slot, send holds, hold, tentative, reschedule, move my meeting, cancel meeting, availability, free/busy, calendar, working hours, buffer, timezone, invite, Google Calendar, Microsoft 365, Outlook calendar, Calendly

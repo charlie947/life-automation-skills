@@ -81,5 +81,30 @@ Not connected / not found: <list, so the gap is visible>
 
 Alternative structure on request, same rules: **Progress** (done + moving) / **Plans** (next) / **Problems** (blockers).
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: Slack shows you discussed the billing migration but never said it shipped.
+Weak: DONE: Shipped the billing migration.
+Strong: DOING: Billing migration in progress, discussed Tue and Thu.
+Why: a standup that overstates DONE is the fastest way to lose the room's trust in it.
+</example>
+<example>
+Situation: A ticket was closed but you cannot tell which of six.
+Weak: DONE: Closed the billing tickets.
+Strong: DONE: Closed 4 of the 6 billing tickets. [NEEDS: which 2 remain]
+Why: the marker is honest and takes the user two seconds. A vague claim takes a follow-up question.
+</example>
+<example>
+Situation: Nothing blocked you this week.
+Weak: BLOCKERS: None, all good, great week!
+Strong: BLOCKERS: None.
+Why: a standup is read by people scanning. Padding an empty section costs everyone a line.
+</example>
+</examples>
+
 ## Keywords
 standup, status update, what did I get done, weekly update, update for the sync, daily standup, Done Doing Blockers, progress plans problems, team update, manager update, recap my week, status report, sprint update, Slack, Microsoft Teams, calendar, Microsoft 365, Notion, Linear

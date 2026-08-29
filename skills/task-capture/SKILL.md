@@ -89,5 +89,30 @@ After a yes:
   ...
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: An email says "we should probably think about the offsite at some point".
+Weak: Task: Plan the offsite (owner: You, due: next Friday)
+Strong: Not captured. Listed under "not tasks": "offsite mentioned as an idea, no ask, no date."
+Why: turning musing into a dated task is how a task list becomes noise nobody trusts.
+</example>
+<example>
+Situation: "Can you send the deck over before the review?"
+Weak: Task: Send deck (owner: You, due: [NEEDS: date])
+Strong: Task: Send the Q3 deck to Priya (owner: You, due: 21/07/2026, source: Gmail "Q3 review")
+Why: the review date was in the thread. Marking a gap you could have read is as bad as inventing one.
+</example>
+<example>
+Situation: The same action appears in an email and a Slack thread.
+Weak: Captures it twice.
+Strong: Captures it once, with both sources named.
+Why: duplicates in a task list are the reason people stop opening it.
+</example>
+</examples>
+
 ## Keywords
 task capture, capture my tasks, extract action items, action items, turn this into to-dos, add this to my list, what are my tasks, pull the tasks out, to-do, todo, task list, Notion tasks, Airtable tasks, ClickUp, Asana, Todoist, Gmail, Slack, action item extraction, file my tasks

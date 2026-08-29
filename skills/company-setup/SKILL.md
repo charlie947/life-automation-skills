@@ -90,5 +90,30 @@ Sign-off: <e.g. "Cheers, <name>">
 Never without asking: <e.g. send anything, book over a focus block, merge a contact>
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: The user says "we do marketing".
+Weak: company: Marketing.
+Strong: company: "B2B marketing agency, 6 people, retainer clients in fintech."
+Why: every other skill reads this line. Vague here means vague in thirteen places.
+</example>
+<example>
+Situation: The user names four people as important.
+Weak: Lists all four as VIPs.
+Strong: Asks which two are the ones whose email genuinely changes the day.
+Why: a VIP list where everyone is a VIP cannot prioritise anything downstream.
+</example>
+<example>
+Situation: The user is not sure which task system they use.
+Weak: task_system: Notion
+Strong: task_system: [NEEDS: Notion or Airtable] and a note that task-capture will ask again.
+Why: guessing the stack sends every downstream skill to a tool that may not exist.
+</example>
+</examples>
+
 ## Keywords
 setup, onboard, onboarding, configure, profile, company-profile, my priorities, my context, VIPs, working hours, set up my skills, update my profile, keystone

@@ -87,5 +87,30 @@ SOURCES
 [S3] ...
 ```
 
+## Examples
+
+These show the judgement calls this skill gets wrong most often. Match the strong column.
+
+<examples>
+<example>
+Situation: Three sources agree, one contradicts them.
+Weak: Reports the majority view and omits the outlier.
+Strong: Reports the majority view, then: "One source [S4] puts the figure at half that. It is the only primary filing of the four."
+Why: the disagreement is usually the most decision-useful thing in the brief.
+</example>
+<example>
+Situation: A claim found only in a press release.
+Weak: "Revenue grew 40% last year."
+Strong: "The company states revenue grew 40% last year [S2, company blog]. No independent source found."
+Why: attributing a self-reported figure to the world turns marketing into fact.
+</example>
+<example>
+Situation: The question is broad, like "tell me about this company".
+Weak: Returns twelve findings with no answer at the top.
+Strong: Opens with the one sharp question it answers, then a two-sentence answer, then the findings.
+Why: the brief exists to support a decision. A list without an answer makes the reader do the work again.
+</example>
+</examples>
+
 ## Keywords
 research, research brief, brief me on, what's the latest, state of play, background on, catch me up, company background, competitor research, person background, due diligence, pre-meeting brief, sourced summary, cited brief, background research, look into, file this in Notion, save to Drive
